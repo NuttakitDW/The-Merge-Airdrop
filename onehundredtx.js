@@ -27,6 +27,7 @@
                 })
             
         }
+        console.log('DONE')
 
         
     } catch (e) {
