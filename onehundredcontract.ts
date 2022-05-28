@@ -7,9 +7,9 @@ import { deploy } from './ethers.ts'
 
 (async () => {
     try {
-        for(let i=0; i < 100; i++){
+        for(let i=0; i < 2; i++){
             
-            const result = await deploy('Storage', [])
+            const result = await deploy('Storage', [{gasLimit: 91000, gasPrice: 859699588269}] )
             console.log(`address: ${result.address}: ${i+1}`)
         }
     } catch (e) {
